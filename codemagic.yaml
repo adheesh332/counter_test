@@ -57,7 +57,7 @@ workflows:
     environment:
       ios_signing:
         distribution_type: app_store
-        bundle_identifier: com.example.flutterapp
+        bundle_identifier: "com.example.flutterapp"
       vars:
         APP_ID: 1111111111 # <-- Put your APP ID here
       flutter: stable
@@ -111,7 +111,7 @@ workflows:
         
         # Configuration related to TestFlight (optional)
         # Note: This action is performed during post-processing.
-        submit_to_testflight: true
+        submit_to_testflight: false
         beta_groups: # Specify the names of beta tester groups that will get access to the build once it has passed beta review.
           - group name 1
           - group name 2
